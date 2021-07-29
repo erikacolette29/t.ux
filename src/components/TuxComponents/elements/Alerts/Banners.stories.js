@@ -4,6 +4,7 @@ import {
   WarningAlert,
   ErrorAlert,
   AlertIcon,
+  XContainer,
 } from "./Banners.js";
 import { withDesign } from "storybook-addon-designs";
 export default {
@@ -18,6 +19,7 @@ export const InfoBanner = () => (
       <p style={{ color: "rgba(51, 51, 51, 0.75)" }}>
         <strong>Default Message - </strong> subtext here
       </p>
+      <XContainer>X</XContainer>
     </DefaultAlert>
   </div>
 );
@@ -29,6 +31,7 @@ export const ErrorBanner = () => (
     <p style={{ color: "rgba(51, 51, 51, 0.75)" }}>
       <strong>Default Message - </strong> subtext here
     </p>
+    <XContainer>X</XContainer>
   </ErrorAlert>
   </div>
 );
@@ -40,6 +43,7 @@ export const WarningBanner = () => (
     <p style={{ color: "rgba(51, 51, 51, 0.75)" }}>
       <strong>Default Message - </strong> subtext here
     </p>
+    <XContainer>X</XContainer>
   </WarningAlert>
   </div>
 );

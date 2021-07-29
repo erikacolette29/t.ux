@@ -1,48 +1,53 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import {
+  pop_semiBold,
+  pop_reg,
+  Poppins,
+  
+} from "../../utilities/Type";
+
+
 export const AlertIcon = styled.img`
 position: absolute;
-left: 20px;
-width: 20px;
+left: 8px;
+width: 17px;
+height:17px;
+
 `
 export const DefaultAlert = styled.button`
-  /* position: fixed; */
+  position: relative;
   display: flex;
-  /* overflow: hidden; */
   border: 1px solid #9EE8FF;
   justify-content: center;
   align-items: center;
-  padding: 7px 8px;
+  //padding: 7px 8px;
   width: 100%;
-  height: 50px;
+  height: 42.28px;
   background: rgba(158, 232, 255, 0.2);
   box-sizing: border-box;
   border-radius: 2px;
+  font-family: ${Poppins};
+  font-size: 16px;
+
 `
 
-export const WarningAlert = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 7px 8px;
-  width: 100%;
-  height: 50px;
-  background: rgba(255, 228, 92, 0.2);
-  border: 1px solid #FFE45C;
-  box-sizing: border-box;
-  border-radius: 2px;
+export const XContainer = styled.div`
+width: 20px;
+height: 20px;
+color: #CBCBCB;
+position: absolute;
+right: 10px;
+
 `
-export const ErrorAlert = styled.button`
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 7px 8px;
-  width: 100%;
-  height: 50px;
+
+export const WarningAlert = styled(DefaultAlert)`
+background: rgba(158, 232, 255, 0.2);
+
+`
+export const ErrorAlert = styled(DefaultAlert)`
   background: rgba(234, 74, 70, 0.2);
   border: 1px solid #E6211E;
-  box-sizing: border-box;
-  border-radius: 2px;
+ 
 `
