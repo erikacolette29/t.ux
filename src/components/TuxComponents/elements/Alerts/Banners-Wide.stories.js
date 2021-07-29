@@ -1,5 +1,5 @@
 import React from 'react'
-import {WideBannerLite,WideBannerGreen,WideBannerRed,AlertMark, MessageHead, MessageSub, XMarker} from './Banners-Wide'
+import {WideBannerLite,WideBannerGreen,WideBannerRed,AlertMark, MessageHead, MessageSub, XMarker,X} from './Banners-Wide'
 import { withDesign } from "storybook-addon-designs";
 export default {
   title: "Banners-Wide",
@@ -8,10 +8,10 @@ export default {
 
 export const BannerWideDefault = () => (
   <WideBannerLite>
-    <XMarker src='./images/AlertXs.svg' />
+    <XMarker><X>x</X></XMarker>
     <AlertMark className='wide-default' src='./images/Primary_fill.svg' />
     <MessageHead>Default banner</MessageHead>
-    <MessageSub>Body Text</MessageSub>
+    <MessageSub>Body Text.</MessageSub>
   </WideBannerLite>
 )
 

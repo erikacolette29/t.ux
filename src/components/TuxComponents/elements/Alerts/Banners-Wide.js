@@ -1,6 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import {
+  pop_semiBold,
+  pop_reg,
+  Poppins,
+  
+} from "../../utilities/Type";
+
+
+import {
+
+  
+} from "../../utilities/Colors";
 
 export const AlertMark = styled.img`
   position: absolute;
@@ -9,6 +21,7 @@ export const AlertMark = styled.img`
   width: 20px;
   align-items: center;
   justify-content: center;
+  
 `
 
 export const WideBannerLite = styled.div`
@@ -20,6 +33,8 @@ export const WideBannerLite = styled.div`
   background: #F6F6F7;
   border: 1px solid #999999;
   border-radius: 8px;
+
+ 
 `
 
 export const WideBannerGreen = styled.div`
@@ -54,11 +69,10 @@ export const MessageHead = styled.div`
   top: 20px;
   width: 148px;
   height: 24px;
-  font: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  font: ${pop_semiBold};
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 4px;
 `
 
 export const MessageSub = styled.div`
@@ -67,15 +81,28 @@ export const MessageSub = styled.div`
   height: 20px;
   left: 56px;
   top: 42px;
+  line-height: 20px;
+  font: ${pop_reg};
   font-size: 16px;
-  line-height: 24px;
+  margin-top: 4px;
 `
 
-export const XMarker = styled.img`
+export const XMarker = styled.div`
 position: absolute;
 right: 20px;
 top: 20px;
-width: 13px;
+width: 20px;
+height: 20px;
+background: #CBCBCB ; 
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
 
-/* background: #888888; */
+
+`
+
+export const X = styled.div`
+font: ${pop_reg};
+color: #fff;
+font-size: 1rem;
 `
