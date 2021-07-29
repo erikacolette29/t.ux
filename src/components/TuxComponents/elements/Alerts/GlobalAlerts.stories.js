@@ -1,5 +1,5 @@
 import React from "react";
-import {GlobalSuccess, GlobalFailure, ExclaimIcon, ImgButton, XMarker} from './GlobalAlerts.js'
+import {GlobalSuccess, GlobalFailure, ExclaimIcon, ImgButton, XMarker, SubSuccess,PSuccess} from './GlobalAlerts.js'
 
 
 import { withDesign } from "storybook-addon-designs";
@@ -13,9 +13,9 @@ export const GlobalConfirm = () => (
   <>
   <GlobalSuccess>
     <ExclaimIcon className='success-icon'  src="/images/GreenExclaimation.svg" />
-    <p>
-      <strong>Congratulations!</strong> - subtitle goes here
-    </p>
+    <PSuccess>
+      <strong>Congratulations! </strong><SubSuccess> - subtitle goes here</SubSuccess> 
+    </PSuccess>
     <ImgButton type="">
       <XMarker src="/images/AlertXs.svg" />
     </ImgButton>
