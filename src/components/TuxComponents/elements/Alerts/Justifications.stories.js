@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { IncorrectJust, CorrectJust, AlertIcon, MessageHead, MessageSub } from './Justifications';
+import { IncorrectJust, CorrectJust, AlertIcon, MessageHead, MessageSub, Divider } from './Justifications';
 import { withDesign } from "storybook-addon-designs";
 export default {
   title: "Justifications",
@@ -8,13 +8,18 @@ export default {
 };
 
 export const JustIncorrect = () => (
+
   <IncorrectJust>
     <AlertIcon className='justification-incorrect' src='./images/error.svg' />
     <MessageHead>Not Quite</MessageHead>
     <MessageSub>
       Provide information that clarifies why the selected answer is wrong and a hint to help the user think about the correct answer 
+    <Divider/>
     </MessageSub>
   </IncorrectJust>
+
+ 
+
 )
 
 export const JustCorrect = () => (

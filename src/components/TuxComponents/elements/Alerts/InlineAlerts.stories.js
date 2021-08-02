@@ -18,7 +18,7 @@ export const AlertDefault = () => (
   <>
     <DefaultAlert >
       <AlertIcon className='default-alert' style={{ width: "12px" }} src="/images/DefaultIcon.svg" />
-      <p style={{ color: "rgba(51, 51, 51, 0.75)" }}>
+      <p style={{ color: "rgba(51, 51, 51, 0.75)"}}>
         <strong>Default Message - </strong> subtext here
       </p>
       <ImgButton type="">

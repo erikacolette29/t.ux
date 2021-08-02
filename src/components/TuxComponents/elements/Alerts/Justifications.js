@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Error from '../../../../images/icons/error.svg'
 import Success from '../../../../images/icons/success.svg'
+import { pop_semiBold, pop_reg, Poppins } from "../../utilities/Type";
 
 export const JustIncorrect = ({ selection }) => {
   const { feedback } = selection;
@@ -58,11 +59,11 @@ top: 32px;
 bottom: 23px;
 width: 148px;
 height: 24px;
-font: "Poppins", sans-serif;
+font: ${pop_semiBold};
 font-style: normal;
-font-weight: bold;
 font-size: 16px;
-line-height: 24px;
+line-height: 20px;
+color: #666666
 `;
 export const MessageSub = styled.div`
   position: absolute;
@@ -72,5 +73,14 @@ export const MessageSub = styled.div`
   top: 60px;
   bottom: 23px;
   font-size: 16px;
+  font: ${pop_reg};
+  font-weight: 200;
   line-height: 24px;
+  color: #666666;
 `;
+
+export const Divider = styled.div`
+margin-top: 103px;
+border-top: 2px dashed #CCCCCC;
+
+`
