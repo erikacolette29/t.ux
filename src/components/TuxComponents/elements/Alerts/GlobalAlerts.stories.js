@@ -27,9 +27,9 @@ export const GlobalDeny = () => (
   <>
     <GlobalFailure>
     <ExclaimIcon src="/images/failure.svg" className='failure-icon' />
-    <p>
-      <strong>Unfortunately</strong> - subtitle goes here
-    </p>
+<PSuccess>
+      <strong>Unfortunately</strong> <SubSuccess>- subtitle goes here</SubSuccess>
+      </PSuccess>
     <ImgButton type="">
       <XMarker src="/images/AlertXs.svg" />
     </ImgButton>

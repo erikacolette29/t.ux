@@ -87,13 +87,13 @@ export const MessageSub = styled.div`
   margin-top: 4px;
 `
 
-export const XMarker = styled.div`
+export const XMarker = styled.img`
 position: absolute;
 right: 20px;
 top: 20px;
 width: 20px;
 height: 20px;
-background: #CBCBCB ; 
+ color: #fff;
  border-radius: 50%;
  display: flex;
  justify-content: center;

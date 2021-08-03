@@ -33,17 +33,18 @@ export const DefaultAlert = styled.button`
 
 `
 
-export const XContainer = styled.div`
-width: 20px;
-height: 20px;
+export const XContainer = styled.img`
+width: 15px;
+height: 15px;
 color: #CBCBCB;
 position: absolute;
-right: 10px;
+right: 13px;
 
 `
 
 export const WarningAlert = styled(DefaultAlert)`
-background: rgba(158, 232, 255, 0.2);
+background: rgba(255, 250, 225);
+border: 1px solid rgba(254,239,158);
 
 `
 export const ErrorAlert = styled(DefaultAlert)`

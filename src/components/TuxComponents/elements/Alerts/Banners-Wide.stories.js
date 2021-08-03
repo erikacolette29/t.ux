@@ -1,6 +1,7 @@
 import React from 'react'
 import {WideBannerLite,WideBannerGreen,WideBannerRed,AlertMark, MessageHead, MessageSub, XMarker,X} from './Banners-Wide'
 import { withDesign } from "storybook-addon-designs";
+import ImageIcons from "../../../../images/icons/CircleX.svg"
 export default {
   title: "Banners-Wide",
   decorators: [withDesign],
@@ -8,7 +9,7 @@ export default {
 
 export const BannerWideDefault = () => (
   <WideBannerLite>
-    <XMarker><X>x</X></XMarker>
+    <XMarker src={ImageIcons}/>
     <AlertMark className='wide-default' src='./images/Primary_fill.svg' />
     <MessageHead>Default banner</MessageHead>
     <MessageSub>Body Text.</MessageSub>
@@ -17,8 +18,8 @@ export const BannerWideDefault = () => (
 
 export const BannerWideSuccess = () => (
   <WideBannerGreen>
-    <XMarker src='./images/AlertXs.svg' />
-    <AlertMark className='wide-success' src='./images/success.svg' />
+    <XMarker src={ImageIcons} />
+    <AlertMark className='wide-success' src='/images/success.svg' />
     <MessageHead>Success banner</MessageHead>
     <MessageSub>Body Text</MessageSub>
   </WideBannerGreen>
@@ -26,7 +27,7 @@ export const BannerWideSuccess = () => (
 
 export const BannerWideError = () => (
   <WideBannerRed>
-    <XMarker src='./images/AlertXs.svg' />
+    <XMarker src={ImageIcons} />
     <AlertMark className='wide-error' src='./images/error.svg' />
     <MessageHead>Error banner</MessageHead>
     <MessageSub>Body Text</MessageSub>

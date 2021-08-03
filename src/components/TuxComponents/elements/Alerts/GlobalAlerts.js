@@ -64,15 +64,8 @@ export const SubSuccess = styled.div`
   margin-top: -3px;
 `;
 
-export const GlobalFailure = styled.div`
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 500px;
-  height: 94px;
+export const GlobalFailure = styled(GlobalSuccess)`
+ 
   border-left: 4px solid #e6211e;
-  box-sizing: border-box;
+
 `;

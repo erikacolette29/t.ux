@@ -33,6 +33,7 @@ position: relative;
   height: 189px;
   border: none;
   border-top: 7px solid #ED605C;
+  border-bottom: 2px dashed #CCCCCC;
 `;
 export const CorrectJust = styled.div`
   position: relative;
@@ -40,6 +41,7 @@ export const CorrectJust = styled.div`
   height: 189px;
   border: none;
   border-top: 7px solid #78C077;
+  border-bottom: 2px dashed #CCCCCC;
 `;
 
 export const AlertIcon = styled.img`
@@ -79,8 +81,3 @@ export const MessageSub = styled.div`
   color: #666666;
 `;
 
-export const Divider = styled.div`
-margin-top: 103px;
-border-top: 2px dashed #CCCCCC;
-
-`

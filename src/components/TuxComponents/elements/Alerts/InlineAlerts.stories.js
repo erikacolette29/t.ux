@@ -9,6 +9,7 @@ import {
   ImgButton,
 } from "./InlineAlerts.js";
 import { withDesign } from "storybook-addon-designs";
+import BannerIcons from "../../../../images/icons/BannerX.svg"
 export default {
   title: "Inline Alerts",
   decorators: [withDesign],
@@ -22,7 +23,7 @@ export const AlertDefault = () => (
         <strong>Default Message - </strong> subtext here
       </p>
       <ImgButton type="">
-        <XMarker src="/images/AlertXs.svg" />
+        <XMarker src={BannerIcons} />
       </ImgButton>
     </DefaultAlert>
   </>
@@ -36,7 +37,7 @@ export const AlertSuccess = () => (
         <strong>Default Message </strong> - subtext here
       </p>
       <ImgButton type="">
-        <XMarker src="/images/AlertXs.svg" />
+        <XMarker src={BannerIcons}  />
       </ImgButton>
     </SuccessAlert>
   </>
@@ -49,7 +50,7 @@ export const AlertWarning = () => (
       <strong>Default Message - </strong> subtext here
     </p>
     <ImgButton type="">
-      <XMarker src="/images/AlertXs.svg" />
+      <XMarker src={BannerIcons} />
     </ImgButton>
   </WarningAlert>
 );
@@ -61,7 +62,7 @@ export const AlertError = () => (
       <strong>Default Message - </strong> subtext here
     </p>
     <ImgButton type="">
-      <XMarker src="/images/AlertXs.svg" />
+      <XMarker src={BannerIcons}  />
     </ImgButton>
   </ErrorAlert>
 );
