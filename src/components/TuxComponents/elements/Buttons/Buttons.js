@@ -23,6 +23,7 @@ import {
 } from "../../utilities";
 
 import {
+  Poppins,
   pop_semiBold,
   Flex,
   solid_border,
@@ -524,11 +525,11 @@ export const TextBtn = styled.button`
   right: 12%;
   top: 12.48%;
   bottom: 12.61%;
-  width: 71px;
+ width: 83px;
   height: 18px;
 
   /* Fonts */
-  font: Poppins;
+  font: ${Poppins} ; 
   font-weight: 500;
   font-style: normal;
   font-size: 14px;

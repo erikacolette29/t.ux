@@ -92,10 +92,10 @@ export const TwoAnswerCards = (args) => (
 export const AnswerCardBox = styled.button`
     width: 165px;
     height: 215px;
-    border-radius: 10px;
+    border-radius: 4px;
     margin: 5px 7px;
     position: relative;
-    border: 1px solid rgba(187, 187, 187, 1);
+    border: none;
     background: #FAFAFA;
     cursor: pointer;
     position: relative;
